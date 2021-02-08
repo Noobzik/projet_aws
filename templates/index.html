@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Projet AWS</h1>
+    <p>Membres du groupe :</p>
+    <table>
+        <tr>
+            <th> Nom </th>
+            <th> Prenom </th>
+        </tr>
+        <tr>
+            <td>CAI</td>
+            <td>Eddy</td>
+        </tr>
+        <tr>
+            <td>MBAE</td>
+            <td>Hakim</td>
+        </tr>
+        <tr>
+            <td>SHEIKH</td>
+            <td>Rakib</td>
+        </tr>
+        <tr>
+            <td>TARANTO</td>
+            <td>Tom</td>
+        </tr>
+    </table>
+    
+    <h4 style="text-align: center">Choissez une action</h4>
+    <button onclick='fromRDStoS3()'>Charger depuis S3 vers RDS</button>
+    <button onclick='fromS3toRDS()'>Charger depuis RDS vers S3</button>
+
+</div>
+{% endblock %}
