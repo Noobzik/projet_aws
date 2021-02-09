@@ -17,7 +17,7 @@
 function fromRDStoS3() {
     $.ajax({
         type: "POST",
-        url:"http://10.0.2.4:5000/", // Mettre l'adresse ip du EC2 Application 2
+        url:"http://35.175.104.144:5000/", // Mettre l'adresse ip du EC2 Application 2
         data : {
             "function": "RDStoS3"
         },
@@ -42,7 +42,7 @@ function fromRDStoS3() {
 function fromS3toRDS() {
     $.ajax({
         type: "POST",
-        url:"http://10.0.2.4:5000/", // Mettre l'adresse ip du EC2 Application 2
+        url:"http://35.175.104.144:5000/", // Mettre l'adresse ip du EC2 Application 2
         data : {
             "function": "S3toRDS"
         },
